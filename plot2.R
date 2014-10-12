@@ -5,6 +5,9 @@
 ## 2014.10.10
 ##
 ##################################
+temp<-tempfile()
+download.file("http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",temp,mode="wb")
+unzip(temp, "household_power_consumption.txt")
 ## create image
 png(file="plot2.png")
 ## data provisioning
